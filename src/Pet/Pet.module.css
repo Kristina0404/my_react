@@ -1,0 +1,11 @@
+.container {
+    width: 600px;
+    background-color: lightblue;
+}
+.img {
+    width : 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px 0 0 40px;
+    
+}
