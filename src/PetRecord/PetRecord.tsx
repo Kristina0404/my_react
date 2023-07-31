@@ -2,7 +2,8 @@ import { log } from 'console';
 import React from 'react'
 import styles from './PetRecord.module.css';
 
-type Props = {id:number, petName:string, additionalInfo: string, displayInfo : boolean}
+
+export interface Props {id:number, petName:string, additionalInfo: string, displayInfo : boolean}
 
 export default function PetRecord(props:Props): JSX.Element {
     const{ id, petName, additionalInfo, displayInfo}=props;
@@ -16,7 +17,7 @@ export default function PetRecord(props:Props): JSX.Element {
     }
   return (
     <div className={styles.container}>
-        <><h2>Pet Record</h2><p>{res}</p></>
+        <><p>{res}</p></>
       </div>
   );
 }
